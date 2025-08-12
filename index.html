@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <div class="container__juego">
+        <div class="container__titulo">
+            <h1>Etch a Sketch.</h1>
+        </div>
+        <div class="container__cuadricula">
+            <div class="container__cuadricula-config">
+                <div class="container__config-mode black-mode">
+                    <input type="radio" id="button__black-mode" name="config-mode" value="black">
+                    <label for="button__black-mode">Black Mode</label>
+                </div>
+                <div class="container__config-mode arcoiris-mode">
+                    <input type="radio" id="button__arcoiris-mode" name="config-mode" value="arcoiris">
+                    <label for="button__arcoiris-mode">Arcoiris Mode</label>
+                </div>
+                <div class="container__config-mode eraser-mode">
+                    <input type="radio" id="button__eraser-mode" name="config-mode" value="eraser">
+                    <label for="button__eraser-mode">Eraser Mode</label>
+                </div>
+                <div class="container__pixels">
+                    <span class="texto__pixeles">16x16</span>
+                    <input class="rango__pixeles" type="range" value="16" min="16" max="32">   
+                </div>
+            </div>
+            <div class="container__cuadricula-juego"></div>
+        </div>
+    </div>
+</body>
+<script src="code.js"></script>
+</html>
